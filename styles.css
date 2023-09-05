@@ -1,4 +1,5 @@
-* { /*this is an universal selector. it's gonna select all the html elements on the page */
+/*this is an universal selector. it's gonna select all the html elements on the page */
+* {
   box-sizing: border-box;
 }
 
@@ -37,6 +38,9 @@ body {
   gap: 16px;
 }
 
+/*::after is a pseudo element that is the last child of the selected element. it is used to add an empty element
+after the last image. if it gets the same width as the images it will push the last image to the
+left when the gallery is in a two-column layout*/
 .gallery::after {
   content: "";
   width: 350px;
